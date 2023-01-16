@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>New York</h1>
+            <ul>
+              <li>Saturday 14:07</li>
+              <li>Rainy</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="data:image/png;base64,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"
+                  width="80px"
+                  alt="raining"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong>12</strong
+                  ><span class="units">°C | <a href="#"> °F </a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity:57%</li>
+                <li>Wind: 5 km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <small> <a href="#">Open-source code</a> by Samar Joharchi </small>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
