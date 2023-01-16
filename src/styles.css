@@ -65,3 +65,6 @@ small {
 a {
   text-decoration: none;
 }
+.form-control {
+  margin-bottom: 15px;
+}
